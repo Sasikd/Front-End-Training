@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3d405b;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav section img {
+    width: 70px;
+    background-color: #3d405b;
+}
+
+nav h2 {
+    padding-top: 10px;
+    color: whitesmoke;
+    line-height: 15px;
+}
+
+nav section span {
+    font-size: x-small;
+    letter-spacing: 0px;
+}
+
+nav #navigation {
+    gap: 80px;
+}
+
+nav section a {
+    font-size: medium;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav section button {
+    border-width: 1px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #3d405b;
+    border-color: #f2cc8f;
+}
+
+nav section button a {
+    color: #f2cc8f;
+}
+
+nav section a:hover {
+    color: #f2cc8f;
+}
+
+nav section a .active {
+    color: #f2cc8f;
+}
+
+nav section button:hover {
+    background-color: #f2cc8f;
+}
+
+nav section button a:hover {
+    color: white;
+}
+
+#content {
+    margin-top: 70px;
+}
+
+.home_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/img/img01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    height: 100vh;
+}
+
+.home_page h2 {
+    color: #100dc4;
+    opacity: 1000;
+}
+
+.home_page iframe {
+    border-radius: 10px;
+}
+
+.home_page_left {
+    padding-top: 10%;
+    align-self: flex-start;
+    line-height: 300%;
+}
+
+.home_page_left button {
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 0px;
+}
+
+.home_page_left button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home_page_left :nth-child(4) {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.about_page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.About {
+    padding-top: 20px;
+}
+
+.About h2 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+.about_page_left {
+    max-width: 600px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.Membership {
+    margin-top: 30px;
+}
+
+.Membership h2 {
+    text-align: center;
+}
+
+.mem_page {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mem_page table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 650px;
+}
+
+.mem_page table th {
+    background-color: #3d405b;
+    color: white;
+}
+
+.fa-xmark {
+    color: red;
+}
+
+.fa-check {
+    color: green;
+}
+
+.contact_page {
+    padding: 70px 0px 0px 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.contact_page .form_style {
+    display: flex;
+    flex-direction: column;
+}
+
+.child:nth-child(3) {
+    margin-top: 140px;
+}
+
+.contact_page .form_style input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: rgb(179, 176, 176);
+}
+
+.contact_page .form_style input, textarea {
+    margin-top: 30px;
+    border-color: rgb(179, 176, 176);
+}
+
+.contact_page .form_style textarea {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.contact_page .form_style button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #f2cc8f;
+    width: 100%;
+    border-color: #f2cc8f;
+    margin-top: 20px;
+    font-size: large;
+}
+
+.contact_page address {
+    margin-top: 90px;
+    text-align: center;
+    background-color: #3d405b;
+    padding: 20px;
+    line-height: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.contact_page address button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e07a5f;
+    position: absolute;
+    left: 0px;
+    color: white;
+    font-size: larger;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.contact_page .back_image {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_page_last li {
+    list-style-type: none;
+    padding: 10px 0px;
+    list-style-position: outside;
+    color: #3d405b;
+    font-size: larger;
+    line-height: 30px;
+}
+
+.contact_page_last:last-child {
+    margin-top: 200px;
+}
+
+.contact_page_last li:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+footer {
+    margin-top: 30px;
+    color: #3d405b;
+    font-size: large;
+}
+
+.icon_place {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.icon_place i {
+    margin-left: 50px;
+    padding: 10px;
+}
