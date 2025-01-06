@@ -1,0 +1,635 @@
+*{
+  margin:0;
+}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
+  height: 100vh;
+}
+.home{
+  background-image: url("images/banner-bg.jpg");
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  height: 130vh;
+}
+header{
+  position: absolute;
+  z-index: 1;
+  padding: 1% 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width:100%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  background-color: #0071f8;
+}
+header img{
+  padding-left: 6%;
+  cursor: pointer;
+}
+header ul {
+  padding-right: 6%;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+}
+header ul li{
+  display: inline-block;
+}
+header ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 350;
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+header ul li .c1{
+  background-color: #1a89f9;
+}
+header ul li a:hover{
+  background-color: #1a89f9;
+}
+header ul button{
+  background-color: #ee626b;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 1%;
+  cursor: pointer;
+}
+header ul button a{
+  text-decoration: none;
+  color: white;
+}
+.main-container{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.left-panel{
+  padding: 20% 8%;
+  width: 50%;
+  color: white;
+}
+.left-panel h5{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.left-panel h1{
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.left-panel p{
+  line-height: 2;
+  font-size: 15px;
+}
+.left-panel .search-bar{
+  background-color: white;
+  width: 70%;
+  height: 14%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-panel .image-caption{
+  margin-left: 20%;
+}
+.left-panel .search-bar input{
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  outline: none;
+}
+.left-panel .search-bar button{
+  background-color: #ee626b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  width: 35%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.left-panel .search-bar button a{
+  text-decoration: none;
+  color: white;
+}
+.left-panel .search-bar button:hover{
+  background-color: #008af8;
+}
+.right-panel{
+  padding: 16% 8%;
+}
+.right-panel img{
+  position: relative;
+  border-radius: 20px;
+}
+.right-panel .price-tag{
+  position: absolute;
+  background-color: #008af8;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  top: 35%;
+  right: 9%;
+  padding: 8px 14px;
+  border-radius: 50px;
+}
+.right-panel .discount{
+  position: absolute;
+  background-color: #ee626b;
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+  top: 93%;
+  right: 30%;
+  padding: 30px 15px;
+  border-radius: 50%;
+}
+.features-container{
+  display: flex;
+  gap: 2%;
+  width: 90%;
+  margin: 0% 7%;
+}
+.features-container .feature-item{
+  margin-top: -10%;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  width: 17%;
+  height: 17vh;
+  padding: 30px;  
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.features-container .feature-item h3{
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-container .feature-item .icon-wrapper{
+  background-color: #0071f8;
+  border-radius: 50%;
+  margin-top: 5%;
+  width: 15%;
+  height: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.features-container .feature-item .icon-wrapper img{
+  width: 50px;
+  height: 50px;
+}
+.features-container .feature-item:hover .icon-wrapper{
+  background-color: #ee626b;
+}
+.features-container .feature-item:hover h3{
+  color:#1e1e1e
+}
+.highlight-section {
+  padding: 14% 7% 7%;
+  font-family: 'Poppins', sans-serif;
+}
+.highlight-section .highlight-header {
+  display: flex;
+  justify-content: space-between;
+}
+.highlight-section .highlight-header .header-main h5 {
+  text-transform: uppercase;
+  color: #ee626b;
+  font-weight: 800;
+}
+.highlight-section .highlight-header .header-main h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e1e1e;
+}
+.highlight-section .highlight-header .header-action {
+  margin-top: 3%;
+}
+.highlight-section .highlight-header .header-action button {
+  padding: 15px 25px;
+  background-color: #ee626b;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.highlight-section .highlight-header .header-action button:hover {
+  background-color: #008af8;
+}
+.highlight-section .highlight-header .header-action button a {
+  text-decoration: none;
+  color: white;
+}
+.highlight-section .highlight-gallery {
+  margin: 5% 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.highlight-section .highlight-gallery .gallery-card {
+  position: relative;
+}
+.highlight-section .highlight-gallery .card-pricing {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #008af8;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+}
+.highlight-section .highlight-gallery .card-pricing strike {
+  font-size: 14px;
+}
+.highlight-section .highlight-gallery img {
+  border-radius: 20px;
+}
+.highlight-section .highlight-gallery .gallery-card {
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+.highlight-section .highlight-gallery .gallery-card div {
+  padding: 10px 20px;
+}
+.highlight-section .highlight-gallery .gallery-card div p {
+  font-size: 14px;
+  color: gray;
+}
+.highlight-section .highlight-gallery .gallery-card div h3 {
+  margin-top: 3%;
+  transition: 0.3s ease-in-out;
+}
+.highlight-section .highlight-gallery .gallery-card .card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.highlight-section .highlight-gallery .gallery-card .card-details .cart-icon {
+  padding: 12px;
+  background-color: #ee626b;
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.highlight-section .highlight-gallery .gallery-card:hover .cart-icon {
+  background-color: #008af8;
+}
+.highlight-section .highlight-gallery .gallery-card:hover .card-details h3 {
+  color: #008af8;
+}
+.popular-games{
+  padding: 14% 7% 7%;
+  font-family: 'Poppins', sans-serif;
+}
+.popular-games .popular-games-header{
+  display: flex;
+  justify-content: space-between;
+}
+.popular-games .popular-games-header .header-left h5{
+  text-transform: uppercase;
+  color: #ee626b;
+  font-weight: 800;
+}
+.popular-games .popular-games-header .header-left h1{
+  font-size: 36px;
+  font-weight: 800;
+  color:#1e1e1e;
+}
+.popular-games .popular-games-header .header-right{
+  margin-top: 3%;
+}
+.popular-games .popular-games-header .header-right button{
+  padding: 15px 25px;
+  background-color: #ee626b;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.popular-games .popular-games-header .header-right button:hover{
+  background-color: #008af8;
+}
+.popular-games .popular-games-header .header-right button a{
+  text-decoration: none;
+  color: white;
+}
+.popular-games .popular-games-gallery{
+  margin: 5% 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.popular-games .popular-games-gallery .gallery-card{
+  position: relative;
+}
+.popular-games .popular-games-gallery .card-prices{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #008af8;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+}
+.popular-games .popular-games-gallery .card-prices1 strike{
+  font-size: 14px;
+}
+.popular-games .popular-games-gallery .card-prices3 strike{
+  font-size: 14px;
+}
+.popular-games .popular-games-gallery img{
+  border-radius: 20px;
+}
+.popular-games .popular-games-gallery .gallery-card{
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+.popular-games .popular-games-gallery .gallery-card div{
+  padding: 10px 20px;
+}
+.popular-games .popular-games-gallery .gallery-card div p{
+  font-size: 14px;
+  color: gray;
+}
+.popular-games .popular-games-gallery .gallery-card div h3{
+  margin-top: 3%;
+  transition: 0.3s ease-in-out;
+}
+.popular-games .popular-games-gallery .gallery-card .card-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-games .popular-games-gallery .gallery-card .card-details .fa-bag-shopping{
+  padding: 12px;
+  background-color: #ee626b;
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.popular-games .popular-games-gallery .gallery-card:hover .fa-bag-shopping{
+  background-color: #008af8;
+}
+.popular-games .popular-games-gallery .gallery-card:hover .card-details h3{
+  color: #008af8;
+}
+.top-categories{
+  padding: 14% 7% 7%;
+  font-family: 'Poppins', sans-serif;
+}
+.top-categories .top-categories-header{
+  display: flex;
+  justify-content: space-between;
+}
+.top-categories .top-categories-header .header-left h5{
+  text-transform: uppercase;
+  color: #ee626b;
+  font-weight: 800;
+}
+.top-categories .top-categories-header .header-left h1{
+  font-size: 36px;
+  font-weight: 800;
+  color:#1e1e1e;
+}
+.top-categories .top-categories-header .header-right{
+  margin-top: 3%;
+}
+.top-categories .top-categories-header .header-right button{
+  padding: 15px 25px;
+  background-color: #ee626b;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.top-categories .top-categories-header .header-right button:hover{
+  background-color: #008af8;
+}
+.top-categories .top-categories-header .header-right button a{
+  text-decoration: none;
+  color: white;
+}
+.top-categories .top-categories-gallery{
+  margin: 5% 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.top-categories .top-categories-gallery .gallery-card{
+  position: relative;
+}
+.top-categories .top-categories-gallery .card-prices{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #008af8;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+}
+.top-categories .top-categories-gallery .card-prices1 strike{
+  font-size: 14px;
+}
+.top-categories .top-categories-gallery .card-prices3 strike{
+  font-size: 14px;
+}
+.top-categories .top-categories-gallery img{
+  border-radius: 20px;
+}
+.top-categories .top-categories-gallery .gallery-card{
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+.top-categories .top-categories-gallery .gallery-card div{
+  padding: 10px 20px;
+}
+.top-categories .top-categories-gallery .gallery-card div p{
+  font-size: 14px;
+  color: gray;
+}
+.top-categories .top-categories-gallery .gallery-card div h3{
+  margin-top: 3%;
+  transition: 0.3s ease-in-out;
+}
+.top-categories .top-categories-gallery .gallery-card .card-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-categories .top-categories-gallery .gallery-card .card-details .fa-bag-shopping{
+  padding: 12px;
+  background-color: #ee626b;
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.top-categories .top-categories-gallery .gallery-card:hover .fa-bag-shopping{
+  background-color: #008af8;
+}
+.top-categories .top-categories-gallery .gallery-card:hover .card-details h3{
+  color: #008af8;
+}
+.shop-signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-signup .product-image img{
+  border-radius: 20px;
+  position: relative;
+}
+.shop-signup .store-info{
+  position: absolute;
+  left: 10%;
+  top: 453%;
+  background-color: #f7f7f7;
+  padding: 5%;
+  width: 23%;
+  height: 50vh;
+  border-radius: 20px;
+}
+.shop-signup .store-info h4{
+  color: #ee626b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+}
+.shop-signup .store-info h1{
+  font-size: 38px;
+}
+.shop-signup .store-info h1 span{
+  color:#0071f8;
+}
+.shop-signup .store-info p{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #58514a;
+}
+.shop-signup .store-info button{
+  padding: 15px 30px;
+  background-color: #ee626b;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.shop-signup .store-info button:hover{
+  background-color: #0071f8;
+}
+.shop-signup .store-info button a{
+  text-decoration: none;
+  color: white;
+}
+.subscribe-section{
+  position: absolute;
+  right: 10%;
+  top: 465%;
+  background-color: #f7f7f7;
+  padding: 5%;
+  width: 23%;
+  height: 38vh;
+  border-radius: 20px;
+}
+.subscribe-section h4{
+  color: #ee626b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+}
+.subscribe-section h1{
+  font-size: 38px;
+}
+.subscribe-section h1 span{
+  color:#0071f8;
+}
+.subscribe-section div{
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 50px;
+  width: 103%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-section div:focus-within{
+  outline: 4px solid #97c2f7;
+}
+.subscribe-section div input{
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.subscribe-section div button{
+  padding: 15px;
+  background-color: #ee626b;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.subscribe-section div button:hover{
+  background-color: #0071f8;
+}
+.subscribe-section div button a{
+  text-decoration: none;
+  color: white;
+}
+footer{
+  background-image: url(asst/footer-bg.jpg);
+  margin-top: 150px;
+  background-color: #0071f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  border-radius: 150px 150px 0px 0px;
+}
+footer p{
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
