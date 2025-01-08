@@ -49,7 +49,7 @@ switch (true) {
         console.log("grade C");
         break;
     case score>=1 && score<70:
-        console.log("grade D");
+        console.log("grade F");
         break;
     default:
         console.log("Na");
