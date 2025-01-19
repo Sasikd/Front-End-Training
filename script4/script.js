@@ -9,7 +9,6 @@ employees.sort(function (a, b) {
 });
 console.log(employees);
   
-  
 //2
 function groupOddEven(numbers) {
     const result = { odd: [], even: [] };
