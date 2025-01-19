@@ -22,7 +22,6 @@ function replaceNames(sentence) {
             sentence.add(n[i]);
         }
     }
-
     return n.join(" ");
 }
 const sen1 = "John Mary John Alex Mary";
