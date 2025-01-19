@@ -27,7 +27,6 @@ function replaceNames(sentence) {
 const sen1 = "John Mary John Alex Mary";
 console.log(replaceNames(sen1));
 
-
 function replaceIndexedWords(sentence) {
     const words = sentence.split(" "); 
     for (let i = 0; i < words.length; i++) {
