@@ -16,7 +16,6 @@ const data = [
         ], 
     }, 
 ];
-
 const tableBody = document.getElementById('table_task2');
 for (let i = 0; i < data.length; i++) {
     const user = data[i];
