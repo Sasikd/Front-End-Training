@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced CRUD Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CRUD Operations Form</h1>
+  <form id="crudForm">
+    <div id="notification" class="notification"></div>
+    <label>Name: <input type="text" id="name" /></label><br>
+    <label>Age: <input type="number" id="age" /></label><br>
+    <label>Phone Number: <input type="number" id="phone" /></label><br>
+    <label>Gender:
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+    </label><br>
+    <label>Subjects:
+      <input type="checkbox" value="Math" /> Math
+      <input type="checkbox" value="Science" /> Science
+      <input type="checkbox" value="Social" /> Social
+    </label><br>
+    <label>DOB: <input type="text" id="dob" /></label><br>
+    <label>Location:
+      <select id="location">
+        <option value="">Select</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Salem">Salem</option>
+        <option value="Namakkal">Namakkal</option>
+      </select>
+    </label><br>
+    <button type="button" id="submitButton" onclick="handleSubmit()">Submit</button>
+  </form>
+
+  <table id="crudTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Phone</th>
+        <th>Gender</th>
+        <th>Subjects</th>
+        <th>DOB</th>
+        <th>Location</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
