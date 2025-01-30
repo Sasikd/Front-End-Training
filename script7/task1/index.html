@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <!-- Login Page -->
+    <div id="loginPage">
+        <h2 class="text-center mb-4">Login</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <p id="loginError" class="error hidden">Please fill in all fields correctly.</p>
+            <button type="button" class="btn btn-primary w-100" onclick="startQuiz()">Start Quiz</button>
+        </form>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="hidden">
+        <h2 class="text-center mb-4">Quiz</h2>
+        <div id="timer" class="mb-3 text-center fw-bold text-primary"></div>
+        <div id="questionContainer" class="mb-3"></div>
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+            <button id="previousButton" class="btn btn-secondary" onclick="previousQuestion()">Previous</button>
+            <button id="nextButton" class="btn btn-secondary" onclick="nextQuestion()">Next</button>
+            <button class="btn btn-success" onclick="submitQuiz()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Result Page -->
+    <div id="resultPage" class="hidden">
+        <h2 class="text-center mb-4">Results</h2>
+        <div id="resultContainer" class="mb-3 text-center"></div>
+        <div id="detailedResult">
+            <h3 class="text-center mb-3">Detailed Breakdown</h3>
+            <ul id="breakdownList" class="list-group"></ul>
+        </div>
+        <button class="btn btn-primary w-100 mt-4" onclick="viewDashboard()">View Dashboard</button>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="hidden">
+        <h2 class="text-center mb-4">Dashboard</h2>
+        <div id="dashboardContainer" class="mb-4">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="dashboardTableBody">
+                    <!-- Rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-primary w-100" onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+
+    <!-- Alert Container -->
+    <div id="alertContainer" class="hidden mt-3"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

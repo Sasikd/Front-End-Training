@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+    background-color: #f8f9fa; /* Light gray background for the app */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+/* Progress Bar */
+#progressBarContainer {
+    background-color: #e9ecef;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: #0d6efd; /* Bootstrap primary color */
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+/* Timer Styling */
+#timer {
+    font-size: 18px;
+    color: #dc3545; /* Red for urgency */
+}
+
+/* Alert Box */
+.alert-box {
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none !important;
+}
